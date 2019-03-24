@@ -4,17 +4,20 @@ We all use websites in our day to day life, to host our portfolio(CV), college w
 Around 140,000 new websites launched per day and in order to host our websites on the internet we need to use hosting websites like godaddy, digital-ocean, etc. and these hosting charges fees on the yearly basis for their service. As we know these change are around (3k to 75k) rupees for just hosting a simple website like a simple student portfolio or a personal websites and for a normal students or an average developer it's hard to pay these hosting fees.
 ---
 ###Let's assume a situation to understand with an example.
+---
 
 suppose Ram is a college student and he designed a website to host their portfolio(CV) also designed many websites for college fest and he want to host these sites on the internet but due to lack of money he is not able to do because hosting sites charges lot's of money.
 Hence, to solve these type of problems, i have programmed a device(Pocket server) which can host website on the internet with free of cost only we need to pay for Pocket Server (Rs.2500).
 ---
 ###Let's see how this device work.
+---
 
 Just transfer your website to Pocket Server using 
 "USB data cable" and connect "Pocket Server" to your phone hotspot network for internet connection and voila your website is now live on internet and anybody from anywhere can access your website and there can all can be done without any service changes to hosting website because server is hosting your website by using your mobile data bandwidth.
 Let's get's deep into how this device work "Pocket Server".
 ---
 ##Working Principle
+---
 
 whenever we are try to host our website are mostly require these things.
 1. A static IP/Public IP
@@ -24,6 +27,7 @@ whenever we are try to host our website are mostly require these things.
 This device create tunnel b/w your local IP address to public IP in order to host your websites.
 In order to forward localhost traffic to Internet here, i am using Serveo tunneling.
 ###Let's gets an overview how serveo works.
+---
 
 There are three pieces involved: your local target server, your ssh client, and Serveo (which is an SSH server + an HTTP server). When you include -R qualis:80:localhost:3000 in your ssh command, your ssh client sends a "tcpip-forward" request to the ssh server that looks kind of like this:
 
@@ -49,6 +53,7 @@ Second to handle bandwidth data it uses your mobile data connection to host your
 and at last to handle all the traffic it require a server which run on 1.2 GHz CPU and 1GB SDRAM, Which can handle upto 40 requests per second.
 
 ####Let's come to most interesting part how to setup and configure our RPI in order to host a website :)
+---
 ##Setup and configuration RPI
 ---
 Burn Rasbian image into memory card and boot up your rpi.
@@ -74,7 +79,8 @@ Viola
 Now Our website is live on internet without paying any fee.
 
 
-##Advantage of Pocket Server
+#Advantage of Pocket Server
+---
 1. Easy to carry(Portable size), size is equal to a credit 	    card.
 2. Easy to step (Plug and play)
 
@@ -88,7 +94,8 @@ Now Our website is live on internet without paying any fee.
 
 7. Wide variety of applications.
 
-##Disadvantage
+#Disadvantage
+---
 1. Not suitable for large scale website eg(irctc, flipkart etc).
 
 2. Bandwidth of pocket server depend on our mobile data.
